@@ -1,6 +1,7 @@
 package com.mrbook.controller;
 
 import com.mrbook.entity.IndustryNum;
+import com.mrbook.entity.Year;
 import com.mrbook.repository.IndustryNumRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +19,11 @@ public class AreaController {
     @RequestMapping("/num")
     public List<IndustryNum> nums(@RequestParam String city) {
         return industryNumRepository.getAllByCityName(city);
+    }
+
+    @RequestMapping("/time")
+    public List<Year> time(@RequestParam String industry, @RequestParam String city) {
+
     }
 
 
