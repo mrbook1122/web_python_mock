@@ -18,6 +18,10 @@ public class IndustryNumRepository {
             list.add(new IndustryNum("房地产", 1700));
             list.add(new IndustryNum("金融", 1500));
             list.add(new IndustryNum("教育", 900));
+            list.add(new IndustryNum("a", 1000));
+            list.add(new IndustryNum("b", 1100));
+            list.add(new IndustryNum("c", 1200));
+            list.add(new IndustryNum("d", 1300));
             return list;
         } else {
             List<IndustryNum> list = new ArrayList<>();
